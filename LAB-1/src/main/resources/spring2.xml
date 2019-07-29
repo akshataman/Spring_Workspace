@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+ xmlns:context="http://www.springframework.org/schema/context"
+
+ xmlns:aop="http://www.springframework.org/schema/aop"
+
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+
+ http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+
+ http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+
+
+ <bean id="emp" class="LAB_1_2.Employee">
+
+ <property name="id" value="12345"/>
+
+ <property name="name" value="Harriet"/>
+
+ <property name="salary" value="40000"/>
+
+ <property name="bu" ref="sbu"/>
+
+ </bean>
+
+
+
+ <bean id="sbu" class="LAB_1_2.SBU">
+
+ <property name="sbuid" value="PES-BU"/>
+
+ <property name="sbuhead" value="Kiran Rao"/>
+
+ <property name="sbuname" value="PES"/>
+
+ </bean>
+
+</beans>
